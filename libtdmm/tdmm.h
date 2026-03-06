@@ -7,6 +7,8 @@ typedef enum {
   FIRST_FIT,
   BEST_FIT,
   WORST_FIT,
+  BUDDY_FIT,
+  MIXED_FIT,
 } alloc_strat_e;
 
 /**
@@ -35,5 +37,6 @@ size_t t_total_mapped(void);
 size_t t_live_aligned(void);
 size_t t_peak_aligned(void);
 size_t t_search_steps(void);
+size_t t_overhead_bytes(void);
 
 #endif // TDMM_H
